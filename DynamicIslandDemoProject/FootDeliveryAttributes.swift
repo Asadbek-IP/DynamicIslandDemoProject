@@ -15,6 +15,6 @@ struct FootDeliveryAttributes: ActivityAttributes {
         var arrivalTime: String
         var phoneNumber: String
         var restaurantName: String
-        var customAddess: String
+        var customerAddress: String
     }
 }

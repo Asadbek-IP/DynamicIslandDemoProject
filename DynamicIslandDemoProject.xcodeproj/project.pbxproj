@@ -15,7 +15,38 @@
 		423EBF0C2B7A379C000CFA3B /* FootDeliveryAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423EBF0B2B7A379C000CFA3B /* FootDeliveryAttributes.swift */; };
 		423EBF0E2B7A37DA000CFA3B /* UserDeafultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423EBF0D2B7A37DA000CFA3B /* UserDeafultsManager.swift */; };
 		423EBF102B7A37F6000CFA3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423EBF0F2B7A37F6000CFA3B /* Constants.swift */; };
+		42F552AD2B7B36F800088E6A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F552AC2B7B36F800088E6A /* WidgetKit.framework */; };
+		42F552AF2B7B36F800088E6A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F552AE2B7B36F800088E6A /* SwiftUI.framework */; };
+		42F552B22B7B36F800088E6A /* FoodDeliveryActivityWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F552B12B7B36F800088E6A /* FoodDeliveryActivityWidgetBundle.swift */; };
+		42F552B42B7B36F800088E6A /* FoodDeliveryActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F552B32B7B36F800088E6A /* FoodDeliveryActivityWidget.swift */; };
+		42F552B62B7B36FB00088E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F552B52B7B36FA00088E6A /* Assets.xcassets */; };
+		42F552BA2B7B36FB00088E6A /* FoodDeliveryActivityWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 42F552AA2B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42F552BF2B7B380C00088E6A /* FootDeliveryAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423EBF0B2B7A379C000CFA3B /* FootDeliveryAttributes.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42F552B82B7B36FB00088E6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 423EBEF02B7A36F0000CFA3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F552A92B7B36F800088E6A;
+			remoteInfo = FoodDeliveryActivityWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42F552BB2B7B36FB00088E6A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42F552BA2B7B36FB00088E6A /* FoodDeliveryActivityWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		423EBEF82B7A36F0000CFA3B /* DynamicIslandDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicIslandDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +58,13 @@
 		423EBF0B2B7A379C000CFA3B /* FootDeliveryAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootDeliveryAttributes.swift; sourceTree = "<group>"; };
 		423EBF0D2B7A37DA000CFA3B /* UserDeafultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDeafultsManager.swift; sourceTree = "<group>"; };
 		423EBF0F2B7A37F6000CFA3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42F552AA2B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FoodDeliveryActivityWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F552AC2B7B36F800088E6A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		42F552AE2B7B36F800088E6A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		42F552B12B7B36F800088E6A /* FoodDeliveryActivityWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryActivityWidgetBundle.swift; sourceTree = "<group>"; };
+		42F552B32B7B36F800088E6A /* FoodDeliveryActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryActivityWidget.swift; sourceTree = "<group>"; };
+		42F552B52B7B36FA00088E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42F552B72B7B36FB00088E6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +75,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42F552A72B7B36F800088E6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F552AF2B7B36F800088E6A /* SwiftUI.framework in Frameworks */,
+				42F552AD2B7B36F800088E6A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				423EBEFA2B7A36F0000CFA3B /* DynamicIslandDemoProject */,
+				42F552B02B7B36F800088E6A /* FoodDeliveryActivityWidget */,
+				42F552AB2B7B36F800088E6A /* Frameworks */,
 				423EBEF92B7A36F0000CFA3B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				423EBEF82B7A36F0000CFA3B /* DynamicIslandDemoProject.app */,
+				42F552AA2B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +129,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		42F552AB2B7B36F800088E6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F552AC2B7B36F800088E6A /* WidgetKit.framework */,
+				42F552AE2B7B36F800088E6A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42F552B02B7B36F800088E6A /* FoodDeliveryActivityWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42F552B12B7B36F800088E6A /* FoodDeliveryActivityWidgetBundle.swift */,
+				42F552B32B7B36F800088E6A /* FoodDeliveryActivityWidget.swift */,
+				42F552B52B7B36FA00088E6A /* Assets.xcassets */,
+				42F552B72B7B36FB00088E6A /* Info.plist */,
+			);
+			path = FoodDeliveryActivityWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +159,34 @@
 				423EBEF42B7A36F0000CFA3B /* Sources */,
 				423EBEF52B7A36F0000CFA3B /* Frameworks */,
 				423EBEF62B7A36F0000CFA3B /* Resources */,
+				42F552BB2B7B36FB00088E6A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				42F552B92B7B36FB00088E6A /* PBXTargetDependency */,
 			);
 			name = DynamicIslandDemoProject;
 			productName = DynamicIslandDemoProject;
 			productReference = 423EBEF82B7A36F0000CFA3B /* DynamicIslandDemoProject.app */;
 			productType = "com.apple.product-type.application";
+		};
+		42F552A92B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F552BE2B7B36FB00088E6A /* Build configuration list for PBXNativeTarget "FoodDeliveryActivityWidgetExtension" */;
+			buildPhases = (
+				42F552A62B7B36F800088E6A /* Sources */,
+				42F552A72B7B36F800088E6A /* Frameworks */,
+				42F552A82B7B36F800088E6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodDeliveryActivityWidgetExtension;
+			productName = FoodDeliveryActivityWidgetExtension;
+			productReference = 42F552AA2B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,6 +199,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					423EBEF72B7A36F0000CFA3B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					42F552A92B7B36F800088E6A = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -128,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				423EBEF72B7A36F0000CFA3B /* DynamicIslandDemoProject */,
+				42F552A92B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +232,14 @@
 			files = (
 				423EBF032B7A36F2000CFA3B /* Preview Assets.xcassets in Resources */,
 				423EBF002B7A36F2000CFA3B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F552A82B7B36F800088E6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F552B62B7B36FB00088E6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +259,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42F552A62B7B36F800088E6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F552BF2B7B380C00088E6A /* FootDeliveryAttributes.swift in Sources */,
+				42F552B42B7B36F800088E6A /* FoodDeliveryActivityWidget.swift in Sources */,
+				42F552B22B7B36F800088E6A /* FoodDeliveryActivityWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42F552B92B7B36FB00088E6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42F552A92B7B36F800088E6A /* FoodDeliveryActivityWidgetExtension */;
+			targetProxy = 42F552B82B7B36FB00088E6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		423EBF042B7A36F2000CFA3B /* Debug */ = {
@@ -283,6 +402,7 @@
 		423EBF072B7A36F2000CFA3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +411,7 @@
 				DEVELOPMENT_TEAM = FTL4TL2Q7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +433,7 @@
 		423EBF082B7A36F2000CFA3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +442,7 @@
 				DEVELOPMENT_TEAM = FTL4TL2Q7Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +455,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.asadbek.DynamicIslandDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42F552BC2B7B36FB00088E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTL4TL2Q7Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodDeliveryActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FoodDeliveryActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadbek.DynamicIslandDemoProject.FoodDeliveryActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42F552BD2B7B36FB00088E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FTL4TL2Q7Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodDeliveryActivityWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FoodDeliveryActivityWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asadbek.DynamicIslandDemoProject.FoodDeliveryActivityWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,6 +532,15 @@
 			buildConfigurations = (
 				423EBF072B7A36F2000CFA3B /* Debug */,
 				423EBF082B7A36F2000CFA3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F552BE2B7B36FB00088E6A /* Build configuration list for PBXNativeTarget "FoodDeliveryActivityWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F552BC2B7B36FB00088E6A /* Debug */,
+				42F552BD2B7B36FB00088E6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

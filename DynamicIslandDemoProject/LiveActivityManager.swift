@@ -11,11 +11,11 @@ import ActivityKit
 class LiveActivityManager {
     
     @discardableResult
-    static func startAvtivity(arrivalTime: String, phoneNumber: String, restaurantName: String, customAddress: String) throws -> String {
+    static func startAvtivity(arrivalTime: String, phoneNumber: String, restaurantName: String, customerAddress: String) throws -> String {
         
         var activity: Activity<FootDeliveryAttributes>?
         
-        let initialState = FootDeliveryAttributes.ContentState(arrivalTime: arrivalTime, phoneNumber: phoneNumber, restaurantName: restaurantName, customAddess: customAddress)
+        let initialState = FootDeliveryAttributes.ContentState(arrivalTime: arrivalTime, phoneNumber: phoneNumber, restaurantName: restaurantName, customerAddress: customerAddress)
         
         
         do {
@@ -46,7 +46,7 @@ class LiveActivityManager {
                 "arrivalTime" : $0.contentState.arrivalTime,
                 "phoneNumber" : $0.contentState.phoneNumber,
                 "restaurentName" : $0.contentState.restaurantName,
-                "customAddress" : $0.contentState.customAddess
+                "customerAddress" : $0.contentState.customerAddress
                 
             ]
         }
@@ -66,8 +66,8 @@ class LiveActivityManager {
     }
      
     
-    static func updateActivity(id: String, arrivalTime: String, phoneNumber: String, restaurantName: String, customAddress: String) async {
-        let updateContentState = FootDeliveryAttributes.ContentState(arrivalTime: arrivalTime, phoneNumber: phoneNumber, restaurantName: restaurantName, customAddess: customAddress)
+    static func updateActivity(id: String, arrivalTime: String, phoneNumber: String, restaurantName: String, customerAddress: String) async {
+        let updateContentState = FootDeliveryAttributes.ContentState(arrivalTime: arrivalTime, phoneNumber: phoneNumber, restaurantName: restaurantName, customerAddress: customerAddress)
         
         let activity =  Activity<FootDeliveryAttributes>.activities.first(where: {$0.id == id })
         
